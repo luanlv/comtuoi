@@ -7785,7 +7785,7 @@ class EditNewsComponent extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Co
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          query: '{ getOneNews(slug: "' + slug + '"){category, coverUrl, slug, public, title, description, body, view, tags, created_at} }'
+          query: '{ getOneNews(slug: "' + slug + '"){_id, category, coverUrl, slug, public, title, description, body, view, tags, created_at} }'
         }),
         credentials: 'include'
       });
@@ -7844,6 +7844,10 @@ class EditNewsComponent extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Co
   updateNews(post) {
     __WEBPACK_IMPORTED_MODULE_2_axios___default.a.post('/api/post/update', post).then(res => {
       __WEBPACK_IMPORTED_MODULE_1_antd__["message"].success('Cập nhập thành công!');
+      __WEBPACK_IMPORTED_MODULE_3__core_history__["a" /* default */].push({
+        pathname: '/admin/news',
+        search: '?v=edit&slug=' + res.data.slug
+      });
     }).catch(err => {
       __WEBPACK_IMPORTED_MODULE_1_antd__["message"].error('Cập nhập thất bại');
     });
@@ -7926,9 +7930,7 @@ class EditNewsComponent extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Co
                       let that = this;
                       let value = e.target.value;
                       let newSlug = function () {
-                        if (that.props.isEdit) return that.state.data.slug;else {
-                          return slugify(value);
-                        }
+                        return slugify(value);
                       };
                       this.setState(prev => {
                         return _extends({}, prev, {
@@ -8503,7 +8505,7 @@ class EditNewsComponent extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Co
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          query: '{ getOneNews(slug: "' + slug + '"){category, coverUrl, slug, public, title, description, body, view, tags, created_at} }'
+          query: '{ getOneNews(slug: "' + slug + '"){_id, category, coverUrl, slug, public, title, description, body, view, tags, created_at} }'
         }),
         credentials: 'include'
       });
@@ -8562,6 +8564,10 @@ class EditNewsComponent extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Co
   updateNews(post) {
     __WEBPACK_IMPORTED_MODULE_4_axios___default.a.post('/api/post/update', post).then(res => {
       __WEBPACK_IMPORTED_MODULE_3_antd__["message"].success('Cập nhập thành công!');
+      __WEBPACK_IMPORTED_MODULE_5__core_history__["a" /* default */].push({
+        pathname: '/admin/news',
+        search: '?v=edit&slug=' + res.data.slug
+      });
     }).catch(err => {
       __WEBPACK_IMPORTED_MODULE_3_antd__["message"].error('Cập nhập thất bại');
     });
@@ -8642,9 +8648,7 @@ class EditNewsComponent extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Co
                       let that = this;
                       let value = e.target.value;
                       let newSlug = function () {
-                        if (that.props.isEdit) return that.state.data.slug;else {
-                          return slugify(value);
-                        }
+                        return slugify(value);
                       };
                       this.setState(prev => {
                         return _extends({}, prev, {
@@ -12396,7 +12400,7 @@ router.post('/post/new', bodyParser.json(), (req, res) => {
 });
 
 router.post('/post/update', bodyParser.json(), (req, res) => {
-  Post.findOneAndUpdate({ slug: req.body.slug }, { $set: req.body }, { new: true }, function (err, resData) {
+  Post.findOneAndUpdate({ _id: req.body._id }, { $set: req.body }, { new: true }, function (err, resData) {
     if (err) return res.statusCode(400).send(err);
     res.send(resData);
   });

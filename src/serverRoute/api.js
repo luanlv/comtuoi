@@ -22,7 +22,7 @@ router.post('/post/new', bodyParser.json() ,(req, res) => {
 })
 
 router.post('/post/update', bodyParser.json() ,(req, res) => {
-  Post.findOneAndUpdate({slug: req.body.slug}, { $set: req.body}, { new: true }, function (err, resData) {
+  Post.findOneAndUpdate({_id: req.body._id}, { $set: req.body}, { new: true }, function (err, resData) {
     if (err) return res.statusCode(400).send(err);
     res.send(resData);
   });

@@ -44,7 +44,7 @@ class EditNewsComponent extends React.Component {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        query: '{ getOneNews(slug: "'+ slug +'"){category, coverUrl, slug, public, title, description, body, view, tags, created_at} }',
+        query: '{ getOneNews(slug: "'+ slug +'"){_id, category, coverUrl, slug, public, title, description, body, view, tags, created_at} }',
       }),
       credentials: 'include',
     })
@@ -130,6 +130,10 @@ class EditNewsComponent extends React.Component {
     axios.post('/api/post/update', post)
       .then(res => {
         message.success('Cập nhập thành công!')
+        history.push({
+          pathname: '/admin/news',
+          search: '?v=edit&slug=' + res.data.slug
+        })
       })
       .catch(err => {
         message.error('Cập nhập thất bại')
@@ -173,12 +177,8 @@ class EditNewsComponent extends React.Component {
                       onChange={(e) => {
                         let that = this
                         let value = e.target.value
-                        let newSlug = function(){
-                          if(that.props.isEdit)
-                            return that.state.data.slug
-                          else {
-                            return slugify(value)
-                          }
+                        let newSlug = function() {
+                          return slugify(value)
                         }
                         this.setState(prev => {
                           return {
