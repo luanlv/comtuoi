@@ -772,7 +772,7 @@ class Footer extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             'div',
             { className: 'col-md-6' },
-            '\xA9 2017 COMHOAVANG. All rights reserved | ',
+            '\xA9 2017 COMTUOI. All rights reserved | ',
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'a',
               { href: 'http://vnguy.com/', target: '_blank' },
@@ -939,7 +939,7 @@ class Header extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'strong',
                 null,
-                '097 331 8868'
+                '01684 756 756'
               )
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'clr' })
@@ -1128,7 +1128,7 @@ class MenuMobile extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 'strong',
                 null,
-                '097 331 8868'
+                '01684 756 756'
               )
             )
           ),
@@ -4291,12 +4291,12 @@ class Main extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                     { className: 'box-in' },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                       'a',
-                      { href: 'tel:0973318868', className: 'button-btn phone corner blink_me', style: { fontSize: 18, fontWeight: 'bold' } },
+                      { href: 'tel:01684756756', className: 'button-btn phone corner blink_me', style: { fontSize: 18, fontWeight: 'bold' } },
                       'T\u01B0 v\u1EA5n: ',
                       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'b',
                         null,
-                        '097 331 8868'
+                        '01684 756 756'
                       )
                     )
                   )
@@ -7954,9 +7954,9 @@ class EditNewsComponent extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Co
                     )
                   ),
                   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_antd__["Input"], {
-                    placeholder: 'Slug',
-                    disabled: this.props.isEdit,
-                    value: this.state.data.slug,
+                    placeholder: 'Slug'
+                    // disabled={this.props.isEdit}
+                    , value: this.state.data.slug,
                     onChange: e => {
                       let value = e.target.value;
                       this.setState(prev => {
@@ -8670,9 +8670,9 @@ class EditNewsComponent extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Co
                     )
                   ),
                   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_antd__["Input"], {
-                    placeholder: 'Slug',
-                    disabled: this.props.isEdit,
-                    value: this.state.data.slug,
+                    placeholder: 'Slug'
+                    // disabled={this.props.isEdit}
+                    , value: this.state.data.slug,
                     onChange: e => {
                       let value = e.target.value;
                       this.setState(prev => {
@@ -9397,9 +9397,9 @@ class EditNewsComponent extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Co
                     )
                   ),
                   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3_antd__["Input"], {
-                    placeholder: 'Slug',
-                    disabled: this.props.isEdit,
-                    value: this.state.data.slug,
+                    placeholder: 'Slug'
+                    // disabled={this.props.isEdit}
+                    , value: this.state.data.slug,
                     onChange: e => {
                       let value = e.target.value;
                       this.setState(prev => {

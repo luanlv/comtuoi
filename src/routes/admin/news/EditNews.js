@@ -197,7 +197,7 @@ class EditNewsComponent extends React.Component {
                     <label><b>slug:</b></label>
                     <Input
                       placeholder="Slug"
-                      disabled={this.props.isEdit}
+                      // disabled={this.props.isEdit}
                       value={this.state.data.slug}
                       onChange={(e) => {
                         let value = e.target.value

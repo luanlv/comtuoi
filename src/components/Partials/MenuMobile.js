@@ -63,7 +63,7 @@ class MenuMobile extends React.Component {
             </ul>
             <div className="mo-box">
               <div className="hotline">
-                Tổng đài CSKH: <strong>097 331 8868</strong></div>
+                Tổng đài CSKH: <strong>01684 756 756</strong></div>
             </div>
             <div className="mo-box">
               <div className="share">

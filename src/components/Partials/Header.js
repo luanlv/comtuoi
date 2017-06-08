@@ -44,7 +44,7 @@ class Header extends React.Component {
                 <img src="/assets/images/fa-1.png" alt=""/></a>
               </div>
               <div className="hotline desktop-showhide">
-                Tổng đài CSKH: <strong>097 331 8868</strong>
+                Tổng đài CSKH: <strong>01684 756 756</strong>
               </div>
               <div className="clr">
               </div>
