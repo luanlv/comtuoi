@@ -1,0 +1,722 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1" /><link href="https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic&amp;subset=latin,vietnamese" rel="stylesheet" type="text/css" /><link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic&amp;subset=latin,vietnamese" rel="stylesheet" type="text/css" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&amp;subset=latin,vietnamese" rel="stylesheet" type="text/css" /><link href="assets/styles/font-awesome.min.css" rel="stylesheet" type="text/css" /><link href="assets/styles/font-awesome-ie7.min.css" rel="stylesheet" type="text/css" /><link href="assets/styles/bootstrap.min.css" rel="stylesheet" type="text/css" /><link href="assets/styles/uniform-base.css" rel="stylesheet" type="text/css" /><link href="assets/styles/nivo-slider.css" rel="stylesheet" type="text/css" /><link href="assets/styles/slick.css" rel="stylesheet" type="text/css" /><link href="assets/styles/jquery.ui.datepicker.css" rel="stylesheet" type="text/css" /><link href="assets/styles/lugo.datepicker.css" rel="stylesheet" type="text/css" /><link href="assets/styles/site.css" rel="stylesheet" type="text/css" /><link href="assets/styles/site-repond.css" rel="stylesheet" />
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <style type="text/css">
+    .corner
+    {
+      position: relative; behavior: url(PIE.htc);
+    }
+  </style>
+  <script type="text/javascript" src="assets/js/html5shiv.js"></script>
+  <script src="assets/js/respond.js" type="text/javascript"></script>
+  <![endif]-->
+  <!--[if lte IE 7]>
+  <link rel="stylesheet" href="assets/styles/ie7.css" />
+  <script src="assets/js/IE8.js" type="text/javascript"></script>
+  <![endif]-->
+  <script src="assets/js/jquery.js" type="text/javascript"></script>
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"></script>
+  <script src="assets/js/jquery.ui.datepicker-vi-VN.js" type="text/javascript"></script>
+  <script src="assets/js/jquery.easing.1.3.js" type="text/javascript"></script>
+  <script src="assets/js/jquery.mb.browser.min.js" type="text/javascript"></script>
+  <script src="assets/js/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+  <script src="assets/js/jquery.textheight.js" type="text/javascript"></script>
+  <script src="assets/js/jwplayer.js" type="text/javascript"></script>
+  <script type="text/javascript">        jwplayer.key = "5qMQ1qMprX8KZ79H695ZPnH4X4zDHiI0rCXt1g==";</script>
+
+
+
+
+
+
+  <!--active menu-->
+  <script type="text/javascript">
+    function changeActiveMenu(page) {
+      $('#menu li').removeClass("active");
+      $('#menu li a[href*="' + page + '"]').parents("li").addClass("active");
+      var h = parseInt
+    }
+    function changeSubActiveMenu(page) {
+      //            $('#menu li').removeClass("active");
+      //            $('#menu li a[href$="' + page + '"]').closest("li").addClass("active");
+      $('.list-menu li').removeClass("active");
+      $('.list-menu li a[href$="' + page + '"]').closest("li").addClass("active");
+      $('.menu-nav li').removeClass("active");
+      $('.menu-nav li a[href$="' + page + '"]').parents("li").addClass("active");
+    }
+  </script>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-84023431-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  <meta name="description" /><title>
+    Sản Phẩm
+  </title></head>
+<body>
+<form name="aspnetForm" method="post" action="san-pham.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+  <div>
+    <input type="hidden" name="ctl00_ctl00_ctl00_ToolkitScriptManager1_HiddenField" id="ctl00_ctl00_ctl00_ToolkitScriptManager1_HiddenField" value="" />
+    <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+    <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+    <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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b+G6oWkgdGjhuqNvIGTGsOG7o2MgdGhpJmVjaXJjO24gbmhpJmVjaXJjO246IENhbyBsJmFhY3V0ZTsgdGjGsOG7nW5nIHh1JmFjaXJjO247IHRpbmguLi5kAgMPZBYGZg8VASJ2aWVuLW5nYW0taG8tYmV6dXQtcGNpLTItcGktMi5hc3B4ZAIBDxYEHwMFGHZpZW4tbmdhbS1oby1iZXp1dC0yLmpwZx8EBSZ+L3Jlcy9wcm9kdWN0L3ZpZW4tbmdhbS1oby1iZXp1dC0yLmpwZ2QCAg8VAyJ2aWVuLW5nYW0taG8tYmV6dXQtcGNpLTItcGktMi5hc3B4FVZpw6puIG5n4bqtbSBobyBiZXp1dLoBVmkmZWNpcmM7biBuZ+G6rW0gaG8gQkVaVVQgxJHGsOG7o2MgY2hp4bq/dCB4deG6pXQgdOG7qyBjJmFhY3V0ZTtjIGxv4bqhaSB0aOG6o28gZMaw4bujYyB0aGkmZWNpcmM7biBuaGkmZWNpcmM7bjogQ2FvIGwmYWFjdXRlOyB0aMaw4budbmcgeHUmYWNpcmM7bjsgdGluaCBkJmFjaXJjO8yAdTogZ8awzIBuZywgaHXMgW5nLi4uZAIED2QWBmYPFQEjY2FsY2l1bS1tdW1la2lkcy0xMC1wY2ktMi1waS04LmFzcHhkAgEPFgQfAwUZY2FsY2l1bS1tdW1la2lkcy0xMC04LmpwZx8EBSd+L3Jlcy9wcm9kdWN0L2NhbGNpdW0tbXVtZWtpZHMtMTAtOC5qcGdkAgIPFQMjY2FsY2l1bS1tdW1la2lkcy0xMC1wY2ktMi1waS04LmFzcHgTQ2FsY2l1bSBtdW1la2lkcyAxMHVDYWxjaXVtIG11bWVraWRzIDEwIELhu5Ugc3VuZyBDYWxjaSwgTWFnbmVzaSB2JmFncmF2ZTsgYyZhYWN1dGU7YyBWaXRhbWluLCBnaSZ1YWN1dGU7cCBuZ8SDbiBuZ+G7q2EgdGhp4bq/dSBjYWxjaSwuLi5kAgUPZBYGZg8VARhob2JlenV0LXBjaS0yLXBpLTExLmFzcHhkAgEPFgQfAwUOaG9iZXp1dC0xMS5qcGcfBAUcfi9yZXMvcHJvZHVjdC9ob2JlenV0LTExLmpwZ2QCAg8VAxhob2JlenV0LXBjaS0yLXBpLTExLmFzcHgHSE9CRVpVVJ4B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FQIidGluLXR1Yy1kb2ktc29uZy10Y2ktMS10cmktMTMuYXNweBpUaW4gdMawzIFjIMSRxqHMgGkgc8O0zIFuZ2QCAg9kFgJmDxUCH3N1LWtpZW4tYmV6dXQtdGNpLTEtdHJpLTE0LmFzcHgRU+G7sSBraeG7h24gQkVaVVRkAgMPZBYCZg8VAh50aW4tZ2lhaS10cmktdGNpLTEtdHJpLTE1LmFzcHgPVGluIGdp4bqjaSB0csOtZAIbDw9kDxAWBGYCAQICAgMWBBYCHwJkFgIfAmQWAh8CZBYCHwJkFgQCAwIDAgMCA2RkAh4PFgIeCWlubmVyaHRtbAWVATxzY3JpcHQgdHlwZT0ndGV4dC9qYXZhc2NyaXB0Jz5jaGFuZ2VBY3RpdmVNZW51KCdzYW4tcGhhbS5hc3B4Jyk8L3NjcmlwdD48c2NyaXB0IHR5cGU9J3RleHQvamF2YXNjcmlwdCc+Y2hhbmdlU3ViQWN0aXZlTWVudSgnc2FuLXBoYW0uYXNweCcpPC9zY3JpcHQ+ZBgRBRtjdGwwMCRjdGwwMCRjdGwwMCRMaXN0VmlldzMPPCsACgIHFCsAAWQIAgFkBUpjdGwwMCRjdGwwMCRjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGNwaEFzaWRlJGxzdFZpZGVvJGN0cmwwJGxzdExpc3RWaWRlbw88KwAKAgcUKwACZGQIAgJkBVhjdGwwMCRjdGwwMCRjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJENvbnRlbnRQbGFjZUhvbGRlcjEkQ29udGVudFBsYWNlSG9sZGVyMSRsc3RTYW5QaGFtDzwrAAoCBzwrAAUACAIFZAUkY3RsMDAkY3RsMDAkY3RsMDAkbHN0RGFuaE11Y1NhblBoYW0xDzwrAAoCBzwrAAUACAIFZAVfY3RsMDAkY3RsMDAkY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRDb250ZW50UGxhY2VIb2xkZXIxJENvbnRlbnRQbGFjZUhvbGRlcjEkbHN0RGFuaE11Y1NhblBoYW0PZ2QFI2N0bDAwJGN0bDAwJGN0bDAwJGxzdERhbmhNdWNTYW5QaGFtDzwrAAoCBzwrAAUACAIFZAUgY3RsMDAkY3RsMDAkY3RsMDAkbHN0SW5mb1dlYnNpdGUPPCsACgIHPCsABgAIAgZkBRtjdGwwMCRjdGwwMCRjdGwwMCRMaXN0VmlldzEPPCsACgIHPCsABAAIAgRkBV5jdGwwMCRjdGwwMCRjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJENvbnRlbnRQbGFjZUhvbGRlcjEkQ29udGVudFBsYWNlSG9sZGVyMSRsc3RCYW5uZXJQcm9kdWN0DzwrAAoBCGZkBSVjdGwwMCRjdGwwMCRjdGwwMCRsc3REYW5oTXVjRGlldVRyaUhvDzwrAAoCBzwrAAQACAIEZAUbY3RsMDAkY3RsMDAkY3RsMDAkTGlzdFZpZXc0DzwrAAoCBxQrAAFkCAIBZAVBY3RsMDAkY3RsMDAkY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSRjcGhBc2lkZSRsc3RLaWVuVGh1Y0JlbmhIb2MPZ2QFQWN0bDAwJGN0bDAwJGN0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkY3BoQXNpZGUkbHN0RGlldVRyaUhvTm9pQmF0D2dkBV1jdGwwMCRjdGwwMCRjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJENvbnRlbnRQbGFjZUhvbGRlcjEkQ29udGVudFBsYWNlSG9sZGVyMSRsc3REYW5oTXVjVGl0bGUPPCsACgIHFCsAAWQIAgFkBTdjdGwwMCRjdGwwMCRjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGNwaEFzaWRlJGxzdFZpZGVvDzwrAAoCBxQrAAFkCAIBZAUbY3RsMDAkY3RsMDAkY3RsMDAkTGlzdFZpZXcyDzwrAAoCBzwrAAQACAIEZAUiY3RsMDAkY3RsMDAkY3RsMDAkbHN0RGFuaE11Y1RpblR1Yw88KwAKAgcUKwADZGRkCAIDZH5YkC5hFgo0pR5E7IhJSMfbWa9A" />
+  </div>
+
+  <script type="text/javascript">
+    //<![CDATA[
+    var theForm = document.forms['aspnetForm'];
+    if (!theForm) {
+      theForm = document.aspnetForm;
+    }
+    function __doPostBack(eventTarget, eventArgument) {
+      if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+      }
+    }
+    //]]>
+  </script>
+
+
+  <script src="/WebResource.axd?d=VUDxAGm3HVAxRpFqIAI9oGLUuGYIGgPxYSbXdK0coNEDU-aaeWLORQR2p0c1XND6YnfsfGG2fEl10O4R8JhXxcGb_DQ1&amp;t=635588870575142005" type="text/javascript"></script>
+
+
+  <script src="/ScriptResource.axd?d=C9x-6Axr90MTc_9MCC5c46Gm5uIUGuTDNpfUsJWXot_3ME7KVijCq2ZeGRvfOLb6Ge7ab9K3LmEI41VZy05EWECCdWRGJ2gH6hzEyVA_LKy_NXmt5C8iJS28iZ7fClJNF00Feg2&amp;t=ffffffffec54f2d7" type="text/javascript"></script>
+  <script type="text/javascript">
+    //<![CDATA[
+    if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+    //]]>
+  </script>
+
+  <script src="/ScriptResource.axd?d=XKHy4GkW58zxR-he26tmKH2HWNl9lELv7iuGlW1cDBa3mfpI6FUsbfFHO2QhrVMkGHZupyxQ03xcsBcTYLUg4T53aNmltmXS2yd88lory7DYVk7ejM0V2IISBMlTwwOBrwunHfA2hld7_Q1P69i-d8Nxsns1&amp;t=ffffffffec54f2d7" type="text/javascript"></script>
+  <script src="/san-pham.aspx?_TSM_HiddenField_=ctl00_ctl00_ctl00_ToolkitScriptManager1_HiddenField&amp;_TSM_CombinedScripts_=%3b%3bAjaxControlToolkit%2c+Version%3d3.5.40412.0%2c+Culture%3dneutral%2c+PublicKeyToken%3d28f01b0e84b6d53e%3aen-US%3a1547e793-5b7e-48fe-8490-03a375b13a33%3ade1feab2%3af9cec9bc%3a35576c48" type="text/javascript"></script>
+  <script type="text/javascript">
+    //<![CDATA[
+    function WebForm_OnSubmit() {
+      null;
+      return true;
+    }
+    //]]>
+  </script>
+
+  <div>
+
+    <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="50B5B3D9" />
+    <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBAKC8NfoBQKH7JyKAQKb2qK8CQKTgqWiDyAumCX25ID+9hMcF8xXUgQRNbEx" />
+  </div>
+  <script type="text/javascript">
+    //<![CDATA[
+    Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$ctl00$ToolkitScriptManager1', document.getElementById('aspnetForm'));
+    Sys.WebForms.PageRequestManager.getInstance()._updateControls([], [], [], 90);
+    //]]>
+  </script>
+
+  <div id="wrapper">
+    <!--header-->
+    <div id="header">
+      <div class="container">
+        <div id="logo">
+          <a href="./">
+            <img src="assets/images/logosh.png" alt="logo" /></a></div>
+
+        <div class="header-right">
+          <div class="button-menu mobile-showhide">
+            <a class="panel-left" href="#menumobile"><span class="icon-bar">bar</span> <span
+              class="icon-bar">bar</span> <span class="icon-bar">bar</span> </a>
+          </div>
+          <a href="#searchbox" class="finda mobile-showhide">search</a>
+          <ul id="menu" class="desktop-showhide">
+            <li class="home"><a href="./">Trang chủ</a></li>
+            <li><a href="san-pham.aspx">Sản phẩm</a>
+
+
+              <ul>
+                <li><a href="nghien-cuu.aspx">Nghiên cứu phát triển</a></li>
+
+                <li><a href='siro-ho-bezut-pci-2-pi-1.aspx'>
+                  Siro ho bezut</a></li>
+
+                <li><a href='vien-ngam-ho-bezut-khong-duong-pci-2-pi-5.aspx'>
+                  Viên ngậm ho bezut không đường</a></li>
+
+                <li><a href='vien-ngam-ho-bezut-pci-2-pi-2.aspx'>
+                  Viên ngậm ho bezut</a></li>
+
+                <li><a href='calcium-mumekids-10-pci-2-pi-8.aspx'>
+                  Calcium mumekids 10</a></li>
+
+                <li><a href='hobezut-pci-2-pi-11.aspx'>
+                  HOBEZUT</a></li>
+
+              </ul>
+
+
+            </li>
+            <li><a href="dieu-tri-ho.aspx">Điều trị ho</a></li>
+            <li><a href="kien-thuc-benh-hoc.aspx">Sức khoẻ tổng hợp</a></li>
+            <li><a href="tu-van.aspx">Tư vấn chuyên gia</a></li>
+            <li><a href="tin-tuc.aspx">Tin tức</a></li>
+            <li><a href="he-thong-phan-phoi.aspx">Hệ thống phân phối</a></li>
+            <li class="last"><a href="lien-he.aspx">Liên hệ</a></li>
+          </ul>
+          <div class="header-bottom">
+            <div id="searchbox" class="search-form">
+              <input type="submit" name="ctl00$ctl00$ctl00$btnSearch" value="" id="ctl00_ctl00_ctl00_btnSearch" class="search-btn" />
+              <div class="search-input">
+                <input name="ctl00$ctl00$ctl00$txtSearch" type="text" id="ctl00_ctl00_ctl00_txtSearch" class="search-text" />
+                <input type="hidden" name="ctl00$ctl00$ctl00$txtSearch_TextBoxWatermarkExtender_ClientState" id="ctl00_ctl00_ctl00_txtSearch_TextBoxWatermarkExtender_ClientState" />
+              </div>
+            </div>
+            <div class="share desktop-showhide">
+              Follow me on <a href="https://www.facebook.com/bacsibezut">
+              <img src="assets/images/fa-1.png" alt="" /></a>
+
+            </div>
+            <div class="hotline desktop-showhide">
+              Tổng đài CSKH: <strong>091 926 3399</strong></div>
+            <div class="clr">
+            </div>
+          </div>
+          <div class="clr">
+          </div>
+        </div>
+      </div>
+      <div class="header-bgr desktop-showhide">
+      </div>
+      <div class="header-bgl desktop-showhide">
+      </div>
+    </div>
+    <!--end header-->
+    <hr />
+    <!--banner-->
+
+
+
+
+    <!--end banner-->
+    <hr />
+    <!--main-->
+    <div id="mainContent">
+      <div class="container">
+
+        <div id="colContent">
+
+
+          <div id="bannerSub">
+            <div class="slider-wrapper">
+
+
+
+            </div>
+          </div>
+
+
+
+          <div class="head-la head-pro">
+            <h2 class="title text-uppercase">
+              sản phẩm</h2>
+            <div class="h-link">
+
+              <a href="nghien-cuu.aspx">
+                Nghiên cứu phát triển</a>
+            </div>
+            <div class="link-nc">
+              <a href="nghien-cuu.aspx">Click me</a>
+            </div>
+          </div>
+
+
+
+
+
+
+
+          <div class="wrap-section">
+
+
+            <div class="product-tb row isotopelist listfull">
+
+              <div class="col-xs-12 element-item">
+                <div class="product-box">
+                  <a href='siro-ho-bezut-pci-2-pi-1.aspx' class="product-img">
+                    <img src="res/product/siro-ho-bezut-1.jpg" alt="siro-ho-bezut-1.jpg" /></a>
+                  <div class="product-content">
+                    <h3 class="product-name">
+                      <a href='siro-ho-bezut-pci-2-pi-1.aspx'>
+                        Siro ho bezut</a></h3>
+                    <div class="description">
+                      Siro Ho Bezut l&agrave; sản phẩm thảo dược gi&uacute;p hỗ trợ l&agrave;m giảm triệu chứng ho ở trẻ. Với c&aacute;c th&agrave;nh phần ch&iacute;nh: cao...</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 element-item">
+                <div class="product-box">
+                  <a href='vien-ngam-ho-bezut-khong-duong-pci-2-pi-5.aspx' class="product-img">
+                    <img src="res/product/vien-ngam-ho-bezut-khong-duong-5.jpg" alt="vien-ngam-ho-bezut-khong-duong-5.jpg" /></a>
+                  <div class="product-content">
+                    <h3 class="product-name">
+                      <a href='vien-ngam-ho-bezut-khong-duong-pci-2-pi-5.aspx'>
+                        Viên ngậm ho bezut không đường</a></h3>
+                    <div class="description">
+                      Vi&ecirc;n ngậm ho BEZUT kh&ocirc;ng đường được chiết xuất từ c&aacute;c loại thảo dược thi&ecirc;n nhi&ecirc;n: Cao l&aacute; thường xu&acirc;n; tinh...</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 element-item">
+                <div class="product-box">
+                  <a href='vien-ngam-ho-bezut-pci-2-pi-2.aspx' class="product-img">
+                    <img src="res/product/vien-ngam-ho-bezut-2.jpg" alt="vien-ngam-ho-bezut-2.jpg" /></a>
+                  <div class="product-content">
+                    <h3 class="product-name">
+                      <a href='vien-ngam-ho-bezut-pci-2-pi-2.aspx'>
+                        Viên ngậm ho bezut</a></h3>
+                    <div class="description">
+                      Vi&ecirc;n ngậm ho BEZUT được chiết xuất từ c&aacute;c loại thảo dược thi&ecirc;n nhi&ecirc;n: Cao l&aacute; thường xu&acirc;n; tinh d&acirc;̀u: gừng, húng...</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 element-item">
+                <div class="product-box">
+                  <a href='calcium-mumekids-10-pci-2-pi-8.aspx' class="product-img">
+                    <img src="res/product/calcium-mumekids-10-8.jpg" alt="calcium-mumekids-10-8.jpg" /></a>
+                  <div class="product-content">
+                    <h3 class="product-name">
+                      <a href='calcium-mumekids-10-pci-2-pi-8.aspx'>
+                        Calcium mumekids 10</a></h3>
+                    <div class="description">
+                      Calcium mumekids 10 Bổ sung Calci, Magnesi v&agrave; c&aacute;c Vitamin, gi&uacute;p ngăn ngừa thiếu calci,...</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xs-12 element-item">
+                <div class="product-box">
+                  <a href='hobezut-pci-2-pi-11.aspx' class="product-img">
+                    <img src="res/product/hobezut-11.jpg" alt="hobezut-11.jpg" /></a>
+                  <div class="product-content">
+                    <h3 class="product-name">
+                      <a href='hobezut-pci-2-pi-11.aspx'>
+                        HOBEZUT</a></h3>
+                    <div class="description">
+                      Viên nang mềm HOBEZUT giúp nhuận phế, làm loãng niêm dịch đường hô hấp , giảm ho do viêm phế quản, ho gió, ho khan, ho dị ứng.</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+
+
+        </div>
+        <div id="colAside">
+
+
+
+          <div class="row">
+            <div class="col-md-12 col-xs-6">
+
+
+
+              <div class="wrap-video">
+                <a href='quang-cao-vien-ngam-ho-bezut-vd-5.aspx'
+                   class="videob">
+                  <img src="res/video/thumbs/quang-cao-vien-ngam-ho-bezut-5.jpg" id="ctl00_ctl00_ctl00_ContentPlaceHolder1_cphAside_lstVideo_ctrl0_Img1" alt="quang-cao-vien-ngam-ho-bezut-5.jpg" />
+                  <span class='ico-play'>
+                            </span></a>
+                <div class="video-content">
+                  <h3 class="video-name">
+                    <a href='quang-cao-vien-ngam-ho-bezut-vd-5.aspx'>
+                      Quảng cáo Viên ngậm ho Bezut</a></h3>
+                </div>
+              </div>
+
+              <ul class="list-video">
+
+                <li><a href='quang-cao-vien-ngam-ho-bezut-vd-5.aspx'
+                       class="video-box"><span class="video-img">
+                                    <img src="res/video/thumbs/quang-cao-vien-ngam-ho-bezut-5.jpg" id="ctl00_ctl00_ctl00_ContentPlaceHolder1_cphAside_lstVideo_ctrl0_lstListVideo_ctrl0_Img2" alt="quang-cao-vien-ngam-ho-bezut-5.jpg" />
+                                </span><span class="video-content"><span class="video-name">
+                                    Quảng cáo Viên ngậm ho Bezut</span> </span></a>
+                  <div class="whidden">
+                    <div id="video-1" class="info-vido" data-video='https://www.youtube.com/watch?v=3s64nZhmK-g&feature=youtu.be'>
+                    </div>
+                  </div>
+                </li>
+
+                <li><a href='quang-cao-siro-ho-bezut-vd-4.aspx'
+                       class="video-box"><span class="video-img">
+                                    <img src="res/video/thumbs/quang-cao-siro-ho-bezut-4.jpg" id="ctl00_ctl00_ctl00_ContentPlaceHolder1_cphAside_lstVideo_ctrl0_lstListVideo_ctrl1_Img2" alt="quang-cao-siro-ho-bezut-4.jpg" />
+                                </span><span class="video-content"><span class="video-name">
+                                    Quảng cáo Siro ho Bezut</span> </span></a>
+                  <div class="whidden">
+                    <div id="video-1" class="info-vido" data-video='https://www.youtube.com/watch?v=S3KcpLej46I&feature=youtu.be'>
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+
+
+
+
+
+            </div>
+            <div class="col-md-12 col-xs-6">
+
+
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 col-xs-6">
+
+
+
+            </div>
+            <div class="col-md-12 col-xs-6">
+              <div class="adv invisible">
+                <a href="he-thong-phan-phoi.aspx">
+                  <img src="assets/images/images-1.jpg" alt="" /></a>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </div>
+    <!--end main-->
+    <hr />
+    <div class="ads-banner">
+
+
+      <div id='ads-left' class="ads-box">
+        <a class="box-ads" href='http://cumative.vn/vi/nghe-va-suc-khoe/hieu-dung-ve-curcumin-nano-curcumin-phytosome-curcumin-novasol-curcumin.html'>
+
+
+          <img src='res/advertisement/48.png'
+               alt="" />
+        </a>
+      </div>
+
+
+
+
+
+      <div id='ads-right' class="ads-box">
+        <a class="box-ads" href='http://cumative.vn/vi/nghe-va-suc-khoe/loan-tinh-nghe-nano---loi-khuyen-cho-nguoi-dung-khi-lua-chon-san-pham-tri-viem-loet-da-day-ta-trang.html'>
+
+          <img src='res/advertisement/49.png'
+               alt="" />
+        </a>
+      </div>
+
+
+
+
+    </div>
+    <div class="clr"></div>
+    <!--footer-->
+    <div id="footer">
+      <div class="footer-wrapper">
+        <div class="container">
+          <div class="footer-box mobi480h">
+            <div class="footer-logo">
+              <a href="http://www.vinacare.vn/">
+                <img src="assets/images/logo-footer.png" alt="" /></a></div>
+            <div class="dangky">
+              <a href="http://online.gov.vn/CustomWebsiteDisplay.aspx?DocId=27183" target="_blank"><img src="assets/images/dangky.png" alt="" /></a></div>
+          </div>
+          <div class="footer-right">
+            <div class="row">
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <h2>
+                  điều trị ho</h2>
+
+
+                <ul class="list-footer">
+
+                  <li><a href='benh-hoc-dti-2-dri-4.aspx'>
+                    Bệnh học
+                    <span class="icona-left icon-chevron-right"></span></a></li>
+
+                  <li><a href='dieu-tri-ho-bang-thuoc-tay-y-dti-2-dri-5.aspx'>
+                    Điều trị ho bằng Thuốc Tây Y
+                    <span class="icona-left icon-chevron-right"></span></a></li>
+
+                  <li><a href='dieu-tri-ho-bang-thao-duoc-dti-2-dri-6.aspx'>
+                    Điều trị ho bằng Thảo Dược
+                    <span class="icona-left icon-chevron-right"></span></a></li>
+
+                  <li><a href='tai-sao-nen-dung-bezut-dti-2-dri-7.aspx'>
+                    Tại sao nên dùng Bezut ?
+                    <span class="icona-left icon-chevron-right"></span></a></li>
+
+                </ul>
+
+
+              </div>
+
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <h2>
+                  Thông tin website</h2>
+
+                <ul class="list-footer">
+
+                  <li><a href='hinh-thuc-thanh-toan-tci-16-tt-894.aspx'>
+                    Hình thức thanh toán<span class="icona-left icon-chevron-right"></span></a></li>
+
+                  <li><a href='chinh-sach-van-chuyen-giao-nhan-tci-16-tt-895.aspx'>
+                    Chính sách vận chuyển, giao nhận<span class="icona-left icon-chevron-right"></span></a></li>
+
+                  <li><a href='chinh-sach-bao-hanh-tci-16-tt-896.aspx'>
+                    Chính sách bảo hành<span class="icona-left icon-chevron-right"></span></a></li>
+
+                  <li><a href='chinh-sach-doitra-hang-tci-16-tt-897.aspx'>
+                    Chính sách đổi/trả hàng<span class="icona-left icon-chevron-right"></span></a></li>
+
+                  <li><a href='chinh-sach-quy-dinh-chung-tci-16-tt-898.aspx'>
+                    Chính sách & Quy định chung<span class="icona-left icon-chevron-right"></span></a></li>
+
+                  <li><a href='chinh-sach-bao-mat-thong-tin-tci-16-tt-912.aspx'>
+                    Chính sách bảo mật thông tin<span class="icona-left icon-chevron-right"></span></a></li>
+
+                </ul>
+
+
+              </div>
+              <div class="col-md-4 col-sm-12 col-xs-12">
+                <h2>Công ty Cổ phần Dược phẩm Vinacare</h2>
+
+                <ul class="address-box list-footer">
+                  <li class="add-1"><span>Địa chỉ: Số 18 ngách 19/15 Kim Đồng - Hà Nội</span></li>
+                  <li class="add-2"><span>Điện thoại: (04) 3664 9263</span></li>
+                  <li class="add-3"><span>Fax: (04) 3664 9265</span></li>
+                  <li class="add-5"><span>Email: <a href="mailto:vinacarepharma@gmail.com">vinacarepharma@gmail.com</a></span></li>
+                  <li>Mã số doanh nghiệp 0102302539 cấp lần đầu ngày 26 tháng 06 năm 2007 và cấp lần thứ
+                    7 ngày 07 tháng 07 năm 2015 tại Sở Kế hoạch và đầu tư Thành phố Hà Nội.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-box mobi480s">
+            <div class="footer-logo">
+              <a href="http://www.vinacare.vn/" id="ctl00_ctl00_ctl00_A1">
+                <img src="assets/images/logo-footer.png" alt="" /></a></div>
+            <div class="dangky">
+              <a href="http://online.gov.vn/CustomWebsiteDisplay.aspx?DocId=27183" target="_blank"><img src="assets/images/dangky.png" alt="" /></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <div class="col-md-6">
+            &copy; 2015 BEZUT. All rights reserved | <a href="http://www.tranlegroup.com" target="_blank">
+            Thiet Ke Web</a> <a href="http://www.tranlegroup.com" target="_blank">Tran Le</a>
+          </div>
+          <div class="col-md-6">
+            Đang truy cập:
+            114
+            | Tổng cộng:
+            737,992
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end footer-->
+    <hr />
+    <!--menumobile-->
+    <div id="menumobile" class="mobile-panel mobilep-left">
+      <div class="close-menu">
+        <a href="#menumobile" class="glyphicon glyphicon-remove-circle"></a>
+      </div>
+      <div class="menu-in">
+        <div class="menu-mobile">
+          <div class="logo">
+            <a href="./">
+              <img src="assets/images/logosh.png" alt="" /></a></div>
+          <ul class="menu-nav">
+            <li><a href="san-pham.aspx">Sản phẩm</a>
+
+              <ul>
+
+                <li><a href='siro-ho-bezut-pci-2-pi-1.aspx'>
+                  Siro ho bezut</a></li>
+
+                <li><a href='vien-ngam-ho-bezut-khong-duong-pci-2-pi-5.aspx'>
+                  Viên ngậm ho bezut không đường</a></li>
+
+                <li><a href='vien-ngam-ho-bezut-pci-2-pi-2.aspx'>
+                  Viên ngậm ho bezut</a></li>
+
+                <li><a href='calcium-mumekids-10-pci-2-pi-8.aspx'>
+                  Calcium mumekids 10</a></li>
+
+                <li><a href='hobezut-pci-2-pi-11.aspx'>
+                  HOBEZUT</a></li>
+
+              </ul>
+
+            </li>
+            <li><a href="dieu-tri-ho.aspx">Điều trị ho</a>
+
+              <ul>
+
+                <li><a href='benh-hoc-dti-2-dri-4.aspx'>
+                  <span class="icon-chevron-right iconl"></span>
+                  Bệnh học</a></li>
+
+                <li><a href='dieu-tri-ho-bang-thuoc-tay-y-dti-2-dri-5.aspx'>
+                  <span class="icon-chevron-right iconl"></span>
+                  Điều trị ho bằng Thuốc Tây Y</a></li>
+
+                <li><a href='dieu-tri-ho-bang-thao-duoc-dti-2-dri-6.aspx'>
+                  <span class="icon-chevron-right iconl"></span>
+                  Điều trị ho bằng Thảo Dược</a></li>
+
+                <li><a href='tai-sao-nen-dung-bezut-dti-2-dri-7.aspx'>
+                  <span class="icon-chevron-right iconl"></span>
+                  Tại sao nên dùng Bezut ?</a></li>
+
+              </ul>
+
+
+            </li>
+            <li><a href="kien-thuc-benh-hoc.aspx">Kiến thức bệnh học</a>
+
+              <ul>
+
+                <li><a href='benh-ho-hap-kci-3-kri-8.aspx'>
+                  <span class="icon-chevron-right iconl"></span>
+                  Bệnh hô hấp</a></li>
+
+                <li><a href='benh-tieu-hoa-kci-3-kri-9.aspx'>
+                  <span class="icon-chevron-right iconl"></span>
+                  Bệnh tiêu hoá</a></li>
+
+                <li><a href='coi-xuong-cham-lon-kci-3-kri-11.aspx'>
+                  <span class="icon-chevron-right iconl"></span>
+                  Còi xương, chậm lớn</a></li>
+
+                <li><a href='tin-y-te-khac-kci-3-kri-12.aspx'>
+                  <span class="icon-chevron-right iconl"></span>
+                  Tin y tế khác</a></li>
+
+              </ul>
+
+
+            </li>
+            <li><a href="tu-van.aspx">Tư vấn bác sỹ</a></li>
+            <li><a href="tin-tuc.aspx">Tin tức</a>
+
+              <ul>
+
+                <li><a href='tin-tuc-doi-song-tci-1-tri-13.aspx'>
+                  <span class="icon-chevron-right iconl"></span>
+                  Tin tức đời sống</a></li>
+
+                <li><a href='su-kien-bezut-tci-1-tri-14.aspx'>
+                  <span class="icon-chevron-right iconl"></span>
+                  Sự kiện BEZUT</a></li>
+
+                <li><a href='tin-giai-tri-tci-1-tri-15.aspx'>
+                  <span class="icon-chevron-right iconl"></span>
+                  Tin giải trí</a></li>
+
+              </ul>
+
+
+            </li>
+            <li><a href="he-thong-phan-phoi.aspx">Hệ thống phân phối</a></li>
+            <li class="last"><a href="lien-he.aspx">Liên hệ</a></li>
+          </ul>
+          <div class="mo-box">
+            <div class="hotline">
+              Tổng đài CSKH: <strong>091 926 3399</strong></div>
+          </div>
+          <div class="mo-box">
+            <div class="share">
+              Follow me on <a href="https://www.facebook.com/bacsibezut">
+              <img src="assets/images/fa-1.png" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--menumobile-->
+
+
+  </div>
+
+
+
+
+
+
+
+  <!--active-->
+  <div id="ctl00_ctl00_ctl00_runScript"><script type='text/javascript'>changeActiveMenu('san-pham.aspx')</script><script type='text/javascript'>changeSubActiveMenu('san-pham.aspx')</script></div>
+  <script src="assets/js/hoverIntent.js" type="text/javascript"></script>
+  <script src="assets/js/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="assets/js/jquery.uniform.min.js" type="text/javascript"></script>
+  <script src="assets/js/isotope.pkgd.min.js" type="text/javascript"></script>
+  <script src="assets/js/slick.min.js" type="text/javascript"></script>
+  <script src="assets/js/superfish.js" type="text/javascript"></script>
+  <script src="assets/js/jquery.panel.mobile.js"></script>
+  <script src="assets/js/jquery.main.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      //an link
+      //            $('.news-big a').attr('href', 'javascript:void(0)');
+      //            $('.news-lbox a').attr('href', 'javascript:void(0)');
+      //            $('.head-list a').attr('href', 'javascript:void(0)');
+      //            $('.news-name a').attr('href', 'javascript:void(0)');
+      //            $('.box-news a').attr('href', 'javascript:void(0)');
+      //            $('.product-box a').attr('href', 'javascript:void(0)');
+      //            $('.section-box a').attr('href', 'javascript:void(0)');
+      //            $('.section-list a').attr('href', 'javascript:void(0)');
+    });
+  </script>
+  <div id="fb-root">
+  </div>
+  <script>        (function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.4";
+    fjs.parentNode.insertBefore(js, fjs);
+  } (document, 'script', 'facebook-jssdk'));</script>
+
+
+  <script type="text/javascript">
+    //<![CDATA[
+    (function() {var fn = function() {$get("ctl00_ctl00_ctl00_ToolkitScriptManager1_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();Sys.Application.initialize();
+    Sys.Application.add_init(function() {
+      $create(Sys.Extended.UI.TextBoxWatermarkBehavior, {"ClientStateFieldID":"ctl00_ctl00_ctl00_txtSearch_TextBoxWatermarkExtender_ClientState","WatermarkText":"Tìm kiếm...","id":"ctl00_ctl00_ctl00_txtSearch_TextBoxWatermarkExtender"}, null, null, $get("ctl00_ctl00_ctl00_txtSearch"));
+    });
+    //]]>
+  </script>
+</form>
+</body>
+</html>

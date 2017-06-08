@@ -1,0 +1,95 @@
+//$green = #5cb846;
+
+#landing {
+  //margin-top: 30px;
+  .heading {
+    position: relative;
+    height: 500px;
+    background-image: url("/landing/comhanoi.jpg");
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-color: #cccccc;
+    .shadow {
+      background: rgba(0, 0, 0, 0.65);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .centerWr {
+    height: 500px;
+    position: relative;
+  }
+  .center {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .boxWr {
+    border: 2px solid #fff;
+    width: 80%;
+  }
+  .boxWr > div {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    color: white;
+    padding: 20px 0 10px 0;
+    .num {
+      font-size: 40px;
+      font-weight: bold;
+    }
+    .text {
+      font-weight: bold;
+      font-size: 10px;
+    }
+  }
+
+  .freeship {
+    margin-top: 20px;
+    font-size: 35px;
+    line-height: 40px;
+    color: white;
+    text-align: left;
+    font-weight: bolder;
+    b {
+      font-size: 40px;
+    }
+  }
+  .form{
+    max-width: 300px;
+    margin: 0 auto;
+    .form-top {
+      min-height: 50px;
+    }
+
+    .form-header {
+      border-top: 5px solid #d8ad52;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      font-size: 20px;
+      background: #5cb846;
+      padding: 5px;
+    }
+    .form-body {
+      background: white;
+      min-height: 300px;
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      input {
+        width: 80%;
+        margin: 0 auto;
+      }
+      .form-button {
+        color: white;
+        font-weight: bold;
+        padding: 5px 25px;
+        background: #5cb846 !important;
+      }
+    }
+  }
+}
