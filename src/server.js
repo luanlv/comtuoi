@@ -204,7 +204,7 @@ app.get('*', routeCache.cacheSeconds(0), async (req, res, next) => {
     if (assets[route.chunk]) {
       data.scripts.push(assets[route.chunk].js);
     }
-    let version = 6
+    let version = 7
 
     if(isAdmin){
       const html = ReactDOM.renderToStaticMarkup(<HtmlAdmin v={version} {...data} isAdmin={isAdmin} />);
