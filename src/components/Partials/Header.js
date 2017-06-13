@@ -9,7 +9,7 @@ class Header extends React.Component {
         <div className="container">
           <div id="logo">
             <Link to="/">
-              <img src="/assets/images/main_logo.png" alt="logo"/>
+              <img src="/assets/logo.png" alt="logo"/>
             </Link>
           </div>
           <div className="header-right">

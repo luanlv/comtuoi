@@ -26,15 +26,14 @@ class Aside extends React.Component {
           </div>
           <div className="col-md-12 col-xs-6">
             <div className="wrap-video">
-              <a href="https://www.youtube.com/watch?v=L74dhO4i-0w" target="_blank" className="videob">
+              <a href="https://www.youtube.com/watch?v=leQfnnCYGro" target="_blank" className="videob">
                 <img src="/assets/images/video-com.jpg"
                      alt="video-com.jpg"/>
                 <span className="ico-play">
                     </span></a>
               <div className="video-content">
                 <h3 className="video-name">
-                  <Link to="/">
-                    Rộn ràng ngày hội văn hóa Cốm Mễ Trì</Link></h3>
+                  <Link to="/">Đặc sản Cốm Làng Vòng Thủ Đô Hà Nội</Link></h3>
               </div>
             </div>
             <ul className="list-video">
@@ -43,11 +42,11 @@ class Aside extends React.Component {
                       </span><span className="video-content"><span className="video-name">
                           Thực đơn 3 món giản dị mà ngon cho ngày lười vào bếp </span> </span></Link>
               </li>
-              <li><Link to="/bai-viet/com-me-tri-thom-ngon-duoc-lam-cong-phu-the-nao" className="video-box"><span className="video-img">
+              <li><Link to="/bai-viet/com-vong-thom-ngon-duoc-lam-cong-phu-the-nao" className="video-box"><span className="video-img">
                         <img src="/image/small/q8u9mdGl1f-8dd01a94-a7ba-44f0-9469-026371258284.jpg" id="ctl00_ctl00_ctl00_ContentPlaceHolder1_cphAside_lstVideo_ctrl0_lstListVideo_ctrl1_Img3" alt="Cốm Mễ Trì thơm ngon được làm công phu thế nào.jpg" />
 
                       </span><span className="video-content"><span className="video-name">
-                          Cốm Mễ Trì thơm ngon được làm công phu thế nào?</span> </span></Link>
+                          Cốm vòng thơm ngon được làm công phu thế nào?</span> </span></Link>
               </li>
             </ul>
           </div>

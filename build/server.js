@@ -420,7 +420,7 @@ class Aside extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
             { className: 'wrap-video' },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'a',
-              { href: 'https://www.youtube.com/watch?v=L74dhO4i-0w', target: '_blank', className: 'videob' },
+              { href: 'https://www.youtube.com/watch?v=leQfnnCYGro', target: '_blank', className: 'videob' },
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '/assets/images/video-com.jpg',
                 alt: 'video-com.jpg' }),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', { className: 'ico-play' })
@@ -434,7 +434,7 @@ class Aside extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                   __WEBPACK_IMPORTED_MODULE_1__Link__["a" /* default */],
                   { to: '/' },
-                  'R\u1ED9n r\xE0ng ng\xE0y h\u1ED9i v\u0103n h\xF3a C\u1ED1m M\u1EC5 Tr\xEC'
+                  '\u0110\u1EB7c s\u1EA3n C\u1ED1m L\xE0ng V\xF2ng Th\u1EE7 \u0110\xF4 H\xE0 N\u1ED9i'
                 )
               )
             )
@@ -470,7 +470,7 @@ class Aside extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
               null,
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 __WEBPACK_IMPORTED_MODULE_1__Link__["a" /* default */],
-                { to: '/bai-viet/com-me-tri-thom-ngon-duoc-lam-cong-phu-the-nao', className: 'video-box' },
+                { to: '/bai-viet/com-vong-thom-ngon-duoc-lam-cong-phu-the-nao', className: 'video-box' },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                   'span',
                   { className: 'video-img' },
@@ -482,7 +482,7 @@ class Aside extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                   __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     'span',
                     { className: 'video-name' },
-                    'C\u1ED1m M\u1EC5 Tr\xEC th\u01A1m ngon \u0111\u01B0\u1EE3c l\xE0m c\xF4ng phu th\u1EBF n\xE0o?'
+                    'C\u1ED1m v\xF2ng th\u01A1m ngon \u0111\u01B0\u1EE3c l\xE0m c\xF4ng phu th\u1EBF n\xE0o?'
                   ),
                   ' '
                 )
@@ -820,7 +820,7 @@ class Header extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             __WEBPACK_IMPORTED_MODULE_1__Link__["a" /* default */],
             { to: '/' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '/assets/images/main_logo.png', alt: 'logo' })
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '/assets/logo.png', alt: 'logo' })
           )
         ),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
