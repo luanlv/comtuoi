@@ -56,7 +56,7 @@ class Footer extends React.Component {
                   <ul className="address-box list-footer">
                     <li className="add-1"><span>Địa chỉ : 29 chợ Dịch Vọng hậu, Cầu Giấy, Hà Nội</span></li>
                     <li className="add-2"><span>Điện thoại : 01684 756 756</span></li>
-                    <li className="add-5"><span>Email: <a href="mailto:comlangvong295@gmail.com">commetri295@gmail.com</a></span></li>
+                    <li className="add-5"><span>Email: <a href="mailto:comlangvong295@gmail.com">comlangvong295@gmail.com</a></span></li>
                   </ul>
                 </div>
               </div>

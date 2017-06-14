@@ -44,7 +44,7 @@ class EditNewsComponent extends React.Component {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        query: '{ getOneProduct(slug: "'+ slug +'"){name, slug, price, coverUrl, description, saleOff, body, created_at} }',
+        query: '{ getOneProduct(slug: "'+ slug +'"){_id, name, slug, price, coverUrl, description, saleOff, body, created_at} }',
       }),
       credentials: 'include',
     })
@@ -127,9 +127,14 @@ class EditNewsComponent extends React.Component {
   }
 
   updateProduct(product){
+    let that = this
     axios.post('/api/product/update', product)
       .then(res => {
         message.success('Cập nhập thành công!')
+        history.push({
+          pathname: '/admin/product',
+          search: '?v=edit&slug=' + that.state.data.slug
+        })
       })
       .catch(err => {
         message.error('Cập nhập thất bại')
@@ -213,6 +218,7 @@ class EditNewsComponent extends React.Component {
                             }
                           }
                         })
+                        console.log(this.state.data)
                       }}
                     />
                   </div>

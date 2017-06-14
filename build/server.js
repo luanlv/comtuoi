@@ -394,19 +394,7 @@ class Aside extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
         'div',
         { className: 'row' },
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'col-md-12 col-xs-6' }),
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'div',
-          { className: 'col-md-12 col-xs-6' },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'div',
-            { className: 'adv' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              __WEBPACK_IMPORTED_MODULE_1__Link__["a" /* default */],
-              { to: '/' },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '/assets/images/hotline.jpg', alt: 'Hotline' })
-            )
-          )
-        )
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'col-md-12 col-xs-6' })
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
@@ -420,7 +408,7 @@ class Aside extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
             { className: 'wrap-video' },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'a',
-              { href: 'https://www.youtube.com/watch?v=leQfnnCYGro', target: '_blank', className: 'videob' },
+              { href: ' https://www.youtube.com/watch?v=UFr0rU3es4M', target: '_blank', className: 'videob' },
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('img', { src: '/assets/images/video-com.jpg',
                 alt: 'video-com.jpg' }),
               __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', { className: 'ico-play' })
@@ -740,7 +728,7 @@ class Footer extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         'a',
                         { href: 'mailto:comlangvong295@gmail.com' },
-                        'commetri295@gmail.com'
+                        'comlangvong295@gmail.com'
                       )
                     )
                   )
@@ -2853,7 +2841,7 @@ app.get('*', routeCache.cacheSeconds(0), (() => {
       if (__WEBPACK_IMPORTED_MODULE_18__assets_json___default.a[route.chunk]) {
         data.scripts.push(__WEBPACK_IMPORTED_MODULE_18__assets_json___default.a[route.chunk].js);
       }
-      let version = 7;
+      let version = 8;
 
       if (isAdmin) {
         const html = __WEBPACK_IMPORTED_MODULE_7_react_dom_server___default.a.renderToStaticMarkup(__WEBPACK_IMPORTED_MODULE_6_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_11__components_HtmlAdmin__["a" /* default */], _extends({ v: version }, data, { isAdmin: isAdmin })));
@@ -9231,7 +9219,7 @@ class EditNewsComponent extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Co
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          query: '{ getOneProduct(slug: "' + slug + '"){name, slug, price, coverUrl, description, saleOff, body, created_at} }'
+          query: '{ getOneProduct(slug: "' + slug + '"){_id, name, slug, price, coverUrl, description, saleOff, body, created_at} }'
         }),
         credentials: 'include'
       });
@@ -9288,8 +9276,13 @@ class EditNewsComponent extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Co
   }
 
   updateProduct(product) {
+    let that = this;
     __WEBPACK_IMPORTED_MODULE_4_axios___default.a.post('/api/product/update', product).then(res => {
       __WEBPACK_IMPORTED_MODULE_3_antd__["message"].success('Cập nhập thành công!');
+      __WEBPACK_IMPORTED_MODULE_5__core_history__["a" /* default */].push({
+        pathname: '/admin/product',
+        search: '?v=edit&slug=' + that.state.data.slug
+      });
     }).catch(err => {
       __WEBPACK_IMPORTED_MODULE_3_antd__["message"].error('Cập nhập thất bại');
     });
@@ -9413,6 +9406,7 @@ class EditNewsComponent extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Co
                           })
                         });
                       });
+                      console.log(this.state.data);
                     }
                   })
                 ),
@@ -12421,9 +12415,8 @@ router.post('/product/new', bodyParser.json(), (req, res) => {
 });
 
 router.post('/product/update', bodyParser.json(), (req, res) => {
-  console.log(req.body);
-  Product.findOneAndUpdate({ slug: req.body.slug }, { $set: req.body }, { new: true }, function (err, resData) {
-    if (err) return res.statusCode(400).send(err);
+  Product.findOneAndUpdate({ _id: req.body._id }, { $set: req.body }, { new: true }, function (err, resData) {
+    if (err) return res.sendStatus(400);
     res.send(resData);
   });
 });

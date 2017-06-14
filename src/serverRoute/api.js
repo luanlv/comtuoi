@@ -43,9 +43,8 @@ router.post('/product/new', bodyParser.json() ,(req, res) => {
 })
 
 router.post('/product/update', bodyParser.json() ,(req, res) => {
-  console.log(req.body)
-  Product.findOneAndUpdate({slug: req.body.slug}, { $set: req.body}, { new: true }, function (err, resData) {
-    if (err) return res.statusCode(400).send(err);
+  Product.findOneAndUpdate({_id: req.body._id}, { $set: req.body}, { new: true }, function (err, resData) {
+    if (err) return res.sendStatus(400);
     res.send(resData);
   });
 })

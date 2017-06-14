@@ -10,10 +10,10 @@ class Aside extends React.Component {
           <div className="col-md-12 col-xs-6">
           </div>
           <div className="col-md-12 col-xs-6">
-            <div className="adv">
-              <Link to={'/'}>
-                <img src="/assets/images/hotline.jpg" alt="Hotline" /></Link>
-            </div>
+            {/*<div className="adv">*/}
+              {/*<Link to={'/'}>*/}
+                {/*<img src="/assets/images/hotline.jpg" alt="Hotline" /></Link>*/}
+            {/*</div>*/}
             {/*<div className="adv">*/}
               {/*<Link to={'/'}>*/}
                 {/*<img src="/assets/images/mon-ngon-tu-com.jpg" alt="cac mon ngon tu com" /></Link>*/}
@@ -26,7 +26,7 @@ class Aside extends React.Component {
           </div>
           <div className="col-md-12 col-xs-6">
             <div className="wrap-video">
-              <a href="https://www.youtube.com/watch?v=leQfnnCYGro" target="_blank" className="videob">
+              <a href=" https://www.youtube.com/watch?v=UFr0rU3es4M" target="_blank" className="videob">
                 <img src="/assets/images/video-com.jpg"
                      alt="video-com.jpg"/>
                 <span className="ico-play">
